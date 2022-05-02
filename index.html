@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumebuildr | Home</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quando&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <section class="landing">
+        <div class="navbar">
+            <div class="logo">
+                <h1>ResumeBuildr</h1>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="build-button">
+                <a href="join.html">Build</a>
+            </div>
+            <i class="fa-solid fa-bars menu-icon" onclick="menuToggle()"></i>
+        </div>
+        <div class="container">
+            <div class="header">
+                <h1 class="l1">Build your amazing resume <div class="l3 underlined">with just one click!</div>
+                </h1>
+            </div>
+            <div class="content">
+                <p>
+                    Use professional field-tested resume templates that follow the exact 'resume rules' employers look
+                    for.
+                </p>
+                <p>Easy to use and done within minutes - try now for free! </p>
+            </div>
+            <div class="build-button body-build-btn">
+                <a href="join.html" class="button">Build Your Resume</a>
+            </div>
+        </div>
+    </section>
+    <section class="landing1">
+        <div class="container">
+            <div class="img-container">
+                <img src="img/bg_tab.png" alt="resume builder">
+            </div>
+            <div class="side-container">
+                <div class="row">
+                    <div class="col icon">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <div class="col body">
+                        <p>Make a resume that wins interviews.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col icon">
+                        <i class="fa-solid fa-file-pen"></i>
+                    </div>
+                    <div class="col body">
+                        <p>Fully customisable and editable resumes.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col icon">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div class="col body">
+                        <p>Select from more than 30+ resume templates.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="landing">
+        <div class="container">
+            <img src="img/gif_land.gif" alt="resume builder actions">
+        </div>
+    </section>
+</body>
+<script type="text/javascript">
+    var menuItems = document.getElementById("menuItems");
+    menuItems.style.maxHeight = "0px";
+
+    function menuToggle() {
+        if (menuItems.style.maxHeight == "0px") {
+            menuItems.style.maxHeight = "200px";
+        } else {
+            menuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+</html>
